@@ -1,16 +1,18 @@
 import React from 'react';
 import s from './Header.module.css';
 import {NavLink} from "react-router-dom";
+import icon from './../../assets/images/palm.png';
 
 const Header = (props) => {
     return (
         <header className={s.header}>
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"
+                src={icon}
                 alt=""/>
-            <div className={s.loginBlock}>
+            <a className={s.textLogo}>Palm Spring</a>
+            <span className={s.loginBlock}>
                 <NavLink to={'/login'}>Login</NavLink>
-            </div>
+            </span>
         </header>
     );
 }

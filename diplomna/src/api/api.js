@@ -10,3 +10,11 @@ export const profileAPI = {
         return instance.get('');
     }
 }
+
+export const authAPI = {
+    login: (email, password, rememberMe = false) => {
+        return instance.post(`auth/login`, {
+            email, password, rememberMe
+        });
+    }
+}

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import {Route} from 'react-router-dom';
 import ProfileContainer from "./components/Navbar/Profile/ProfileContainer";
 import MyTravelContainer from "./components/Navbar/MyTravel/MyTravelContainer";
+import Login from "./components/Header/Login/Login";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
                 <Route path='/posts'/>
                 <Route path='/settings'/>
                 <Route path='/help'/>
+                <Route path='/login' render={() => <Login/>}/>
             </div>
         </div>
     );

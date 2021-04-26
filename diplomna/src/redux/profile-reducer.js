@@ -13,8 +13,10 @@ let initialState = {
 const profileReducer = (state = initialState, action) => {
     switch (action.type) {
         case SAVE_CHANGES: {
+            debugger;
             return {
-                ...state
+                ...state,
+                userProfile: action.formData
             };
         }
         default:

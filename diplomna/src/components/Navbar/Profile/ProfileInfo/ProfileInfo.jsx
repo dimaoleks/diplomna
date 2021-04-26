@@ -10,28 +10,28 @@ const ProfileInfoForm = (props) => {
             <div>
                 <Field
                     placeholder={"First name"}
-                    name={"First name"}
+                    name={"firstName"}
                     component='input'
                     type="text"/>
             </div>
             <div>
                 <Field
                     placeholder={"Second name"}
-                    name={"Second name"}
+                    name={"secondName"}
                     component='input'
                     type="text"/>
             </div>
             <div>
                 <Field
                     placeholder={"Email"}
-                    name={"Email"}
+                    name={"email"}
                     component='input'
                     type="text"/>
             </div>
             <div>
                 <Field
                     placeholder={"Phone number"}
-                    name={"Phone number"}
+                    name={"phoneNumber"}
                     component='input'
                     type="text"/>
             </div>
@@ -47,7 +47,7 @@ const ProfileReduxForm = reduxForm({
 })(ProfileInfoForm);
 
 const ProfileInfo = (props) => {
-    const onSubmit = (formData)=> {
+    const onSubmit = (formData) => {
         props.profileSave(formData);
     }
 
@@ -60,8 +60,6 @@ const ProfileInfo = (props) => {
         </div>
     );
 }
-const mapStateToProps = (state) => ({
-
-});
+const mapStateToProps = (state) => ({});
 
 export default connect(mapStateToProps, {profileSave})(ProfileInfo);
