@@ -1,10 +1,14 @@
 import './App.css';
 import HeaderContainer from "./components/Header/HeaderContainer";
 import Navbar from "./components/Navbar/Navbar";
-import {Route} from 'react-router-dom';
+import {BrowserRouter, Route, withRouter} from 'react-router-dom';
 import ProfileContainer from "./components/Navbar/Profile/ProfileContainer";
 import MyTravelContainer from "./components/Navbar/MyTravel/MyTravelContainer";
 import Login from "./components/Header/Login/Login";
+import {compose} from "redux";
+import {connect, Provider} from "react-redux";
+import {initializeApp} from "./redux/app-reducer";
+import store from './redux/redux-store';
 
 
 function App() {
@@ -24,4 +28,25 @@ function App() {
     );
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+    initialized: state.app.initialized
+})
+
+let AppContainer = compose(
+    withRouter,
+    connect(mapStateToProps, {
+        initializeApp
+    })
+)(App);
+
+const MainApp = (props) => {
+    return (
+        <BrowserRouter>
+            <Provider store={store}>
+                <AppContainer/>
+            </Provider>
+        </BrowserRouter>
+    );
+}
+
+export default MainApp;

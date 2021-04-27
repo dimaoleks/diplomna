@@ -2,28 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e7e8bed-d41c-49a2-9155-71589f25d281" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Login/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/Travel/Travel.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/components/common/AddButton/AddButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/components/common/AddButton/AddButton.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/redux/auth-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/redux/travel-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/redux/app-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravels.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Header/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Login/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravel.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravel.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravelContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravelContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/ProfileContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravels.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravels.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/auth-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/redux/travel-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/travel-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/diplomna/src/components/common/AddButton" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -93,7 +82,8 @@
       <updated>1618851507805</updated>
       <workItem from="1618851514445" duration="8628000" />
       <workItem from="1618933847685" duration="4710000" />
-      <workItem from="1619452019227" duration="18594000" />
+      <workItem from="1619452019227" duration="18646000" />
+      <workItem from="1619540762985" duration="8148000" />
     </task>
     <servers />
   </component>

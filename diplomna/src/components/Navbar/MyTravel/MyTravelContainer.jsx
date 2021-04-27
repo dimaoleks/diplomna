@@ -17,7 +17,8 @@ class MyTravelContainer extends React.Component {
 }
 
 let mapStateToProps = (state) => ({
-    travels: state.travelPage.travels
+    travels: state.travelPage.travels,
+    countries: state.travelPage.countries
 });
 
 export default connect(
