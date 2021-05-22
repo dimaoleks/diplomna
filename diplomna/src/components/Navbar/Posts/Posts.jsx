@@ -52,8 +52,9 @@ const Posts = (props) => {
     }
 
     const handleFormSubmit = (e) => {
+        debugger;
         const formData = new FormData();
-        formData.append("authorName", values.authorName);
+        formData.append("author", values.authorName);
         formData.append("caption", values.caption);
         formData.append("description", values.description);
         formData.append("imageFile", values.imageFile);

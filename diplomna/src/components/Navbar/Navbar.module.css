@@ -1,17 +1,30 @@
 .nav {
     grid-area: n;
-    background-color: #ea661d;
+    background-color: #429EA6;
     /*background: linear-gradient(#881144, #BF473C);*/
     padding: 20px 40px;
 }
 
+.item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 .item a {
-    color: black;
+    padding: 0 45px;
+    color: #ffffff;
     text-decoration: none;
     font-size: 26px;
     transition: background-color 0.5s;
 }
 
-.item a:hover {
-    background-color: #d1d16c;
+.item :hover {
+    background-color: #881144;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }

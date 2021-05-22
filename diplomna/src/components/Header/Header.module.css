@@ -1,36 +1,113 @@
-.header {
-    grid-area: h;
-    background-color: #0d0c25;
-    height: 120px;
-    max-height: 120px;
-    display: block;
-    color: white;
-}
+/*.header {*/
+/*    grid-area: h;*/
+/*    background-color: #0d0c25;*/
+/*    height: 120px;*/
+/*    max-height: 120px;*/
+/*    display: block;*/
+/*    color: white;*/
+/*}*/
 
-.header img {
-    width: 60px;
-    padding: 25px 0 0 35px;
-    vertical-align: middle;
-}
-
-.loginBlock {
-    float: right;
-    margin: 10px 10px 0 0;
-}
+/*.header img {*/
+/*    width: 60px;*/
+/*    padding: 25px 0 0 35px;*/
+/*    vertical-align: middle;*/
+/*}*/
 
 /*.loginBlock {*/
-/*    !*float: right;*!*/
-/*    margin: 35px 15px 0 85%;*/
+/*    float: right;*/
+/*    position: relative;*/
+/*    width: 15%;*/
 /*}*/
 
-/*.loginBlock a {*/
+/*!*.loginBlock {*!*/
+/*!*    !*float: right;*!*!*/
+/*!*    margin: 35px 15px 0 85%;*!*/
+/*!*}*!*/
+
+/*!*.loginBlock a {*!*/
+/*!*    text-decoration: none;*!*/
+/*!*    padding: 10px 10px;*!*/
+/*!*    background-color: white;*!*/
+/*!*    border-radius: 7px;*!*/
+/*!*}*!*/
+
+/*.textLogo {*/
+/*    margin-top: 10px;*/
+/*    color: white;*/
+/*}*/
+
+/*.authButton {*/
+
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*}*/
+
+/*.authButton > a {*/
+/*    display: block;*/
+/*    background-color: #03a492;*/
+/*    text-align: center;*/
 /*    text-decoration: none;*/
-/*    padding: 10px 10px;*/
-/*    background-color: white;*/
-/*    border-radius: 7px;*/
+/*    margin-top: 10px;*/
 /*}*/
 
-.textLogo {
-    margin-top: 10px;
+/*.authButton > a:hover {*/
+/*    background-color: #03a492;*/
+/*}*/
+
+
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #153B50;
+    padding: 20px 10px;
+}
+
+.header a {
+    float: left;
     color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header .loginBlock a:hover {
+    background-color: #03a492;
+    color: #580113;
+}
+
+.header a.active {
+    background-color: #03a492;
+    color: white;
+}
+
+.headerRight {
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
 }

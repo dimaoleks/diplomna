@@ -1,5 +1,6 @@
 import React from "react";
 import {authAPI, postApi as postAPI} from "../api/api";
+import {reset} from "redux-form";
 
 const ADD_POST = 'profile/ADD-POST';
 const DELETE_POST = 'profile/DELETE-POST';
@@ -74,16 +75,30 @@ export const addPosts = (formData) => ({
     post: {
         caption: formData.caption,
         description: formData.description,
-        image: formData.imageFile
+        image: formData.imageSrc,
+        author: formData.author
+
     }
 });
 
 export const sendPost = (formData) => async (dispatch) => {
-    // debugger;
+    debugger;
     // let response = await postAPI.sendPost(formData);
     // if (response.succeeded) {
+
+    //let file = await getBase64(formData.imageFile);
+
     dispatch(addPosts(formData));
     // }
+}
+
+const getBase64 = (file) => {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = error => reject(error);
+    });
 }
 
 export default postsReducer;

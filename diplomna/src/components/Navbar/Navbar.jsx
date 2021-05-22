@@ -20,6 +20,10 @@ const Navbar = (props) => {
             <div className={s.item}>
                 <NavLink to="/help">Help</NavLink>
             </div>
+            
+            <div className={s.logo}>
+                <img src="http://kartinki.vip/uploads/posts/2017-10/1506805657_570-malina.gif" alt=""/>
+            </div>
         </nav>
     );
 }

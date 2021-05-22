@@ -1,6 +1,6 @@
 .container {
     /*background: linear-gradient(#881144, #530e32);*/
-    background: #628e7b;
+    background: #689bb7;
     width: 90%;
     margin-bottom: 20px;
 }
@@ -26,6 +26,17 @@
     width: 150px;
     height: 200px;
 }
+
+.previewImageBlock {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.previewImageBlock > img {
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+    }
 
 .headerText {
     grid-area: headerText;
@@ -76,4 +87,8 @@
 
 .postAddButton {
     margin: 20px 0 25px 50px;
+}
+
+.fileInput {
+    background-color: #0d0c25;
 }

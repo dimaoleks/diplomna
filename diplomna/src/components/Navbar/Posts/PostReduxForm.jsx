@@ -17,34 +17,30 @@ const PostReduxForm = (props) => {
     return (
         <>
             <form onSubmit={props.handleSubmit} autoComplete="off" noValidate className="card">
-
-                <img className={s.postIcon} src={values.imageSrc} alt=""/>
+                <div className={s.previewImageBlock}>
+                    <img src={values.imageSrc || values.image} alt=""/>
+                </div>
 
                 <div className={s.postCreatorBlock}>
 
-                    <div className="form-group">
+                    <div>
                         <input type="file" accept="image/*" onChange={props.showPreview}/>
                     </div>
 
-                    <div className="form-group">
+                    <div>
                         <input type="text" name="caption" placeholder="Caption" value={values.caption}
                                onChange={props.handleInputChange}/>
                     </div>
 
-                    <div className="form-group">
-                        <textarea name="description" placeholder="Description" value={values.description}
+                    <div>
+                        <input type="text" name="author" placeholder="Author" value={values.author}
                                onChange={props.handleInputChange}/>
                     </div>
 
-                    {/*{createField(null, "image", FileInput, null, "file",  null, "")}*/}
-
-                    {/*/!*{createPhotoField(null, "image", FileInput, null, "file", null)}*!/*/}
-
-                    {/*{createField(null, "caption", Input, null, "text", null, "Caption")}*/}
-
-                    {/*{createField(null, "author", Input, null, "text", null, "Author")}*/}
-
-                    {/*{createField(null, "description", TextArea, null, "text", null, "Description")}*/}
+                    <div>
+                        <textarea name="description" placeholder="Description" value={values.description}
+                                  onChange={props.handleInputChange}/>
+                    </div>
                 </div>
 
                 <div className={s.postAddButton}>
