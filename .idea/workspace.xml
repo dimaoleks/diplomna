@@ -4,15 +4,12 @@
     <list default="true" id="8e7e8bed-d41c-49a2-9155-71589f25d281" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Navbar.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/PostReduxForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/PostReduxForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/Posts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/Posts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/Posts.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/redux/posts-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/posts-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/common/AddButton/AddButton.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/common/AddButton/AddButton.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/auth-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +96,7 @@
       <workItem from="1621490537438" duration="5186000" />
       <workItem from="1621527463390" duration="3222000" />
       <workItem from="1621609494315" duration="1730000" />
-      <workItem from="1621676146298" duration="16855000" />
+      <workItem from="1621676146298" duration="19776000" />
     </task>
     <servers />
   </component>

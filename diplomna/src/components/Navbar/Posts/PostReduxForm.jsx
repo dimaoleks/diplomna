@@ -38,13 +38,13 @@ const PostReduxForm = (props) => {
                     </div>
 
                     <div>
-                        <textarea name="description" placeholder="Description" value={values.description}
+                        <textarea rows={8} name="description" placeholder="Description" value={values.description}
                                   onChange={props.handleInputChange}/>
                     </div>
                 </div>
 
                 <div className={s.postAddButton}>
-                    <button type="submit">add sss</button>
+                    <AddButton name={"Create post"}/>
                 </div>
 
             </form>

@@ -27,18 +27,18 @@ const Header = (props) => {
         //     </div>
         // </header>
 
+
         <header className={s.header}>
             <NavLink to={'/'} className={s.logo}>Palm Springs</NavLink>
             <div className={s.headerRight + " " + s.loginBlock}>
                 {
                     props.isAuth ?
                         <>
-                            {props.login} -
-                            <NavLink onClick={props.logout}>Logout</NavLink>
+                            {props.login} - <NavLink to={'/login'} className={s.active} onClick={props.logout}>Logout</NavLink>
                         </>
                         :
                         <>
-                            <NavLink className={s.active} to={'/login'}>Login</NavLink>
+                            <NavLink to={'/login'} className={s.active} >Login</NavLink>
                             <NavLink to={'/register'}>Register</NavLink>
                         </>
                 }

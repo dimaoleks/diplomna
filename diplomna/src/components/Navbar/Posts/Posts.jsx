@@ -17,7 +17,7 @@ const initialFieldValues = {
 }
 const Posts = (props) => {
 
-    let postsElements = [...props.posts].map(p => <PostDiv image={p.image} caption={p.caption}
+    let postsElements = [...props.posts].reverse().map(p => <PostDiv image={p.image} caption={p.caption}
                                                            author={"- \"" + p.author + "\""} description={p.description}
                                                            likesCount={p.likesCount} key={p.id}/>);
     const [values, setValues] = useState(initialFieldValues);
