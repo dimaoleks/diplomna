@@ -10,9 +10,22 @@ const Header = (props) => {
                 src={icon}
                 alt=""/>
             <a className={s.textLogo}>Palm Spring</a>
-            <span className={s.loginBlock}>
-                <NavLink to={'/login'}>Login</NavLink>
-            </span>
+            <div className={s.loginBlock}>
+                {
+                    props.isAuth
+                        ? <div>
+                            {props.login} -
+                            <button onClick={props.logout}>Logout</button>
+                        </div>
+                        :
+                        <div>
+                            <NavLink to={'/login'}>Login</NavLink>
+                            <div> </div>
+                            <NavLink to={'/register'}>Register</NavLink>
+                        </div>
+                }
+
+            </div>
         </header>
     );
 }

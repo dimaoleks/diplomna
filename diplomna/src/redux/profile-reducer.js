@@ -1,11 +1,13 @@
+import {profileAPI} from "../api/api";
+
 const SAVE_CHANGES = 'SAVE-CHANGES';
 
 let initialState = {
     userProfile: {
-        id: 1,
+        id: "99173b99-b164-4023-b947-2c80ee18bf98",
         firstName: "Dmytro",
-        secondName: "Oleksandryuk",
-        email: "@mail.ru",
+        lastName: "Oleksandryuk",
+        email: "dima.oleksandryuk@gmail.com",
         phoneNumber: "0669007804"
     }
 }
@@ -16,7 +18,7 @@ const profileReducer = (state = initialState, action) => {
             debugger;
             return {
                 ...state,
-                userProfile: action.formData
+                userProfile: action.profile
             };
         }
         default:
@@ -24,6 +26,14 @@ const profileReducer = (state = initialState, action) => {
     }
 }
 
-export const profileSave = (formData) => ({type: SAVE_CHANGES, formData});
+export const profileSave = (profile) => ({type: SAVE_CHANGES, profile});
+
+export const getUserProfile = (userId) => async (dispatch) => {
+    debugger;
+    let response = await profileAPI.getProfile(userId);
+    if (response.succeeded === true) {
+        dispatch(profileSave(response));
+    }
+}
 
 export default profileReducer;

@@ -47,5 +47,6 @@
   "devDependencies": {
     "@material-ui/pickers": "^3.3.10",
     "@material-ui/styles": "^4.11.3"
-  }
+  },
+  "proxy": "https://localhost:44361/api/"
 }

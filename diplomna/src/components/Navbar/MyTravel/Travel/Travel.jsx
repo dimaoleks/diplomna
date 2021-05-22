@@ -1,19 +1,33 @@
 import React from "react";
 import s from './../MyTravel.module.css';
 
-const Travel = (props) => {
+class Travel extends React.Component {
 
-    let onItemClick = (asd) => {
-        console.log(asd);
+    const
+    onItemClick = () => {
+        return 123;
     }
 
-    return (
-        <div className={s.travelItem} onDoubleClick={e => onItemClick(e)}>
-            <div className={s.itemText}>
-                {props.name}, {props.country} budget: {props.money} {props.currency}, Date "{props.date}"
+    render() {
+
+        return (
+            <div className={s.travelItem} onDoubleClick={this.onItemClick}>
+                <div className={s.itemHeadText}>
+                    <h2>{this.props.name}</h2>
+                </div>
+                <div className={s.itemCountryText}>
+                    <h3>{this.props.country}</h3>
+                </div>
+                <div className={s.itemDetailsText}>
+                    Budget: {this.props.money} {this.props.currency}
+                </div>
+                <div className={s.itemDetailsText}>
+                    Date
+                    "{this.props.date}"
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default Travel;

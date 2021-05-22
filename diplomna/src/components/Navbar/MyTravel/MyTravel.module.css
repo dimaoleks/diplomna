@@ -1,19 +1,35 @@
+h1,h2,h3,h4,h5,h6 {
+    padding: 0;
+    margin: 0;
+}
+
 .travelsBlock {
     margin: 15px 0 0 15px;
 }
 
 .travelItem {
-    background-color: #ffc65f;
+    background-color: #fcdec9;
     max-width: 450px;
+    min-height: 150px;
     border-radius: 10px;
     height: 50px;
-    display: flex;
     align-items: center;
     margin-top: inherit;
 }
 
-.itemText {
-    padding-left: 10px;
+.itemHeadText {
+    text-align: center;
+    padding: 10px 45% 0 10px;
+}
+
+.itemCountryText {
+    padding-left: 30%;
+    color: darkblue;
+}
+
+.itemDetailsText {
+    padding-left: 10%;
+    color: #881144;
 }
 
 .itemDiv div {

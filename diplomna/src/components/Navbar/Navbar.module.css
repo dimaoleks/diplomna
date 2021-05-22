@@ -1,6 +1,7 @@
 .nav {
     grid-area: n;
-    background-color: deeppink;
+    background-color: #ea661d;
+    /*background: linear-gradient(#881144, #BF473C);*/
     padding: 20px 40px;
 }
 
@@ -12,5 +13,5 @@
 }
 
 .item a:hover {
-    background-color: #881144;
+    background-color: #d1d16c;
 }

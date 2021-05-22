@@ -3,37 +3,26 @@ import s from './ProfileInfo.module.css';
 import {reduxForm, Field} from "redux-form";
 import {connect} from "react-redux";
 import {profileSave} from "../../../../redux/profile-reducer";
+import {TextField} from "@material-ui/core";
 
 const ProfileInfoForm = (props) => {
     return (
         <form className={s.infoContainer} onSubmit={props.handleSubmit}>
             <div>
-                <Field
-                    placeholder={"First name"}
-                    name={"firstName"}
-                    component='input'
-                    type="text"/>
+                <TextField defaultValue={props.profile.firstName} id="standard-required" label="First name"
+                           placeholder={"First name"} type={"text"} name={"firstName"}/>
             </div>
             <div>
-                <Field
-                    placeholder={"Second name"}
-                    name={"secondName"}
-                    component='input'
-                    type="text"/>
+                <TextField defaultValue={props.profile.lastName} id="standard-required" label="Last name"
+                           placeholder={"Last name"} type={"text"} name={"lastName"}/>
             </div>
             <div>
-                <Field
-                    placeholder={"Email"}
-                    name={"email"}
-                    component='input'
-                    type="text"/>
+                <TextField defaultValue={props.profile.email} id="standard-required" label="Email"
+                           placeholder={"Email"} type={"text"} name={"email"}/>
             </div>
             <div>
-                <Field
-                    placeholder={"Phone number"}
-                    name={"phoneNumber"}
-                    component='input'
-                    type="text"/>
+                <TextField defaultValue={props.profile.phoneNumber} id="standard-required" label="First name"
+                           placeholder={"Phone"} type={"text"} name={"phoneNumber"}/>
             </div>
             <div>
                 <button>Save changes</button>
@@ -56,7 +45,7 @@ const ProfileInfo = (props) => {
             <div className={s.photoContainer}>
                 <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt=""/>
             </div>
-            <ProfileReduxForm onSubmit={onSubmit}/>
+            <ProfileReduxForm onSubmit={onSubmit} profile={props.profile}/>
         </div>
     );
 }

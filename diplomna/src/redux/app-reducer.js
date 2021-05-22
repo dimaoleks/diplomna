@@ -1,3 +1,5 @@
+import {getIsAuthorized} from "./auth-reducer";
+
 const INITIALIZED_SUCCESS = 'app/INITIALIZED-SUCCESS';
 
 let initialState = {
@@ -19,7 +21,11 @@ const appReducer = (state = initialState, action) => {
 export const initializedSuccess = () => ({type: INITIALIZED_SUCCESS});
 
 export const initializeApp = () => (dispatch) => {
-    dispatch(initializedSuccess());
+    // let promise = dispatch(getIsAuthorized());
+    // Promise.all([promise])
+    //     .then(() => {
+    //         dispatch(initializedSuccess());
+    //     });
 }
 
 export default appReducer;

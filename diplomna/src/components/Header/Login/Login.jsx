@@ -1,26 +1,32 @@
 import React from 'react';
 import {Field, reduxForm} from "redux-form";
-import {login, setAuthUserData} from '../../../redux/auth-reducer';
+import {login} from '../../../redux/auth-reducer';
 import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
 
 const LoginForm = (props) => {
-    debugger;
     return (
-        <form onChange={props.handleSubmit}>
+        <form onSubmit={props.handleSubmit}>
             <div>
                 <Field
-                    placeholder={"Email"}
-                    name={"email"}
+                    placeholder={"Username"}
+                    name={"username"}
                     component={"input"}
-                    type="text"/>
+                    type={"text"}/>
             </div>
             <div>
                 <Field
                     placeholder={"Password"}
                     name={"password"}
                     component={"input"}
-                    type="password"/>
+                    type={"password"}/>
+            </div>
+            <div>
+                <Field
+                    name={"rememberMe"}
+                    component={"input"}
+                    type={"checkbox"}/>
+                    Remember me
             </div>
             <div>
                 <button>Login</button>
@@ -36,14 +42,14 @@ const LoginReduxForm = reduxForm({
 const Login = (props) => {
     const onSubmit = (formData) => {
         debugger;
-        props.setAuthUserData(formData.email, formData.password, formData.rememberMe);
+        props.login(formData.username, formData.password, formData.rememberMe);
     }
 
     if (props.isAuth) {
-        debugger;
         return <Redirect to={"/profile"}/>
     }
 
+    debugger;
     return (
         <div>
             <h1>Login</h1>
@@ -56,4 +62,4 @@ const mapStateToProps = (state) => ({
     isAuth: state.auth.isAuth
 });
 
-export default connect(mapStateToProps, {login, setAuthUserData})(Login);
+export default connect(mapStateToProps, {login})(Login);
