@@ -7,11 +7,10 @@
 /*    color: white;*/
 /*}*/
 
-/*.header img {*/
-/*    width: 60px;*/
-/*    padding: 25px 0 0 35px;*/
-/*    vertical-align: middle;*/
-/*}*/
+.header img {
+    width: 30px;
+    align-items: center;
+}
 
 /*.loginBlock {*/
 /*    float: right;*/
@@ -19,10 +18,11 @@
 /*    width: 15%;*/
 /*}*/
 
-/*!*.loginBlock {*!*/
-/*!*    !*float: right;*!*!*/
-/*!*    margin: 35px 15px 0 85%;*!*/
-/*!*}*!*/
+.loginBlock > a > img {
+    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 /*!*.loginBlock a {*!*/
 /*!*    text-decoration: none;*!*/
@@ -56,8 +56,9 @@
 /*}*/
 
 
-
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -110,4 +111,9 @@ body {
     .header-right {
         float: none;
     }
+}
+
+.logoutButton {
+    width: 20px;
+    height: 20px;
 }

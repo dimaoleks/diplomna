@@ -2,6 +2,8 @@ import React from 'react';
 import s from './Header.module.css';
 import {NavLink} from "react-router-dom";
 import icon from './../../assets/images/palm.png';
+import logout from './../../assets/iconPack/logout.svg'
+import register from './../../assets/iconPack/register.svg';
 
 const Header = (props) => {
     return (
@@ -29,30 +31,24 @@ const Header = (props) => {
 
 
         <header className={s.header}>
-            <NavLink to={'/'} className={s.logo}>Palm Springs</NavLink>
+            <NavLink to={'/mainpage'} className={s.logo}>Palm-Travel<img src={icon} alt=""/></NavLink>
             <div className={s.headerRight + " " + s.loginBlock}>
                 {
                     props.isAuth ?
                         <>
-                            {props.login} - <NavLink to={'/login'} className={s.active} onClick={props.logout}>Logout</NavLink>
+                            {props.login} - <NavLink to={'/login'} className={s.active} onClick={props.logout}>
+                            <img className={s.logoutButton} src={logout} alt=""/>Logout</NavLink>
                         </>
                         :
                         <>
-                            <NavLink to={'/login'} className={s.active} >Login</NavLink>
-                            <NavLink to={'/register'}>Register</NavLink>
+                            <NavLink to={'/login'} className={s.active}>
+                                <img className={s.logoutButton} src={logout} alt=""/>Sign in</NavLink>
+                            <NavLink to={'/register'}>
+                                <img className={s.logoutButton} src={register} alt=""/>Sign up</NavLink>
                         </>
                 }
             </div>
         </header>
-
-        // <div className={s.header}>
-        //     <a href="#default" className={s.logo}>CompanyLogo</a>
-        //     <div className={s.headerRight}>
-        //         <a className={s.active} href="#home">Home</a>
-        //         <a href="#contact">Contact</a>
-        //         <a href="#about">About</a>
-        //     </div>
-        // </div>
     );
 }
 

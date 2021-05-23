@@ -12,6 +12,7 @@ import store from './redux/redux-store';
 import {Component} from "react";
 import Register from "./components/Header/Register/Register";
 import PostsContainer from "./components/Navbar/Posts/PostsContainer";
+import MainPage from "./components/Main/MainPage/MainPage";
 
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
                         <Route path='/help'/>
                         <Route path='/login' render={() => <Login/>}/>
                         <Route path='/register' render={() => <Register/>}/>
+                        <Route path='/mainpage' render={() => <MainPage/>}/>
                     </div>
                 </div>
             </>

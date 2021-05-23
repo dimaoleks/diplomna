@@ -8,23 +8,32 @@
 .item {
     align-items: center;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .item a {
-    padding: 0 45px;
+    padding: 0 15px;
     color: #ffffff;
     text-decoration: none;
     font-size: 26px;
     transition: background-color 0.5s;
 }
 
-.item :hover {
-    background-color: #881144;
+.item img {
 }
+
+/*.item :hover {*/
+/*    background-color: #881144;*/
+/*}*/
 
 .logo {
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+.nav img {
+    width: 10%;
+    height: 10%;
+    display: inline-block;
 }
