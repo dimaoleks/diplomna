@@ -13,6 +13,7 @@ import {Component} from "react";
 import Register from "./components/Header/Register/Register";
 import PostsContainer from "./components/Navbar/Posts/PostsContainer";
 import MainPage from "./components/Main/MainPage/MainPage";
+import Help from "./components/Navbar/Help/Help";
 
 
 class App extends Component {
@@ -34,7 +35,7 @@ class App extends Component {
                         <Route path='/my-travel' render={() => <MyTravelContainer/>}/>
                         <Route path='/posts' render={() => <PostsContainer/>}/>
                         <Route path='/settings'/>
-                        <Route path='/help'/>
+                        <Route path='/help' render={() => <Help/>} />
                         <Route path='/login' render={() => <Login/>}/>
                         <Route path='/register' render={() => <Register/>}/>
                         <Route path='/mainpage' render={() => <MainPage/>}/>

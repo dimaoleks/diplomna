@@ -3,6 +3,7 @@ import React from "react";
 
 
 const PostDiv = (props) => {
+    debugger;
     return (
         <div className={s.container}>
             <div className={s.postBlock}>
@@ -17,7 +18,10 @@ const PostDiv = (props) => {
                 </div>
 
                 <div className={s.likeBlock}>
-                    <button className={s.likeButton}>
+                    <button className={s.likeButton} onClick={e => {
+                        debugger;
+                        props.isLiked ? props.addLike(props.id) : props.removeLike(props.id)
+                    }}>
                         👍🏻
                     </button>
                     <span className={s.likeCount}>

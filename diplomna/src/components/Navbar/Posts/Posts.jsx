@@ -17,9 +17,14 @@ const initialFieldValues = {
 }
 const Posts = (props) => {
 
-    let postsElements = [...props.posts].reverse().map(p => <PostDiv image={p.image} caption={p.caption}
-                                                           author={"- \"" + p.author + "\""} description={p.description}
-                                                           likesCount={p.likesCount} key={p.id}/>);
+    let postsElements = [...props.posts].reverse().map(p => <PostDiv id={p.id} image={p.image} caption={p.caption}
+                                                                     author={"- \"" + p.author + "\""}
+                                                                     description={p.description}
+                                                                     likesCount={p.likesCount} key={p.id}
+                                                                     addLike={props.addLike}
+                                                                     removeLike={props.removeLike}
+                                                                     isLiked={p.isLiked}
+    />);
     const [values, setValues] = useState(initialFieldValues);
 
     const handleInputChange = e => {
@@ -52,7 +57,6 @@ const Posts = (props) => {
     }
 
     const handleFormSubmit = (e) => {
-        debugger;
         const formData = new FormData();
         formData.append("author", values.authorName);
         formData.append("caption", values.caption);
@@ -64,7 +68,9 @@ const Posts = (props) => {
 
     return (
         <>
-            <PostReduxForm onSubmit={e => {handleFormSubmit(e)}} handleInputChange={handleInputChange} showPreview={showPreview} initialValues={values}/>
+            <PostReduxForm onSubmit={e => {
+                handleFormSubmit(e)
+            }} handleInputChange={handleInputChange} showPreview={showPreview} initialValues={values}/>
             <hr/>
             <h2>Last posts</h2>
             <hr/>

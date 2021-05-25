@@ -1,11 +1,27 @@
 .photoContainer {
-    padding: 5px 25px 25px 5px;
+    padding: 25px 25px 25px 25px;
+    display: block;
+    align-items: center;
+    vertical-align: center;
+    text-align: center;
 }
 
 .photoContainer img {
-    width: 100px;
+    width: 180px;
+    max-width: 180px;
 }
 
-.infoContainer {
+.infoContainer > div {
+    margin-top: 10px;
+}
 
+.infoContainer > div input {
+    padding-left: 10%;
+    min-width: 350px;
+}
+
+.profile {
+    margin-left: 50px;
+    display: inline-block;
+    align-items: center;
 }

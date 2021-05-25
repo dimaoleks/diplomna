@@ -9,34 +9,39 @@ import settings from './../../assets/iconPack/016-smartphone.svg';
 
 const Navbar = (props) => {
     return (
-        <nav className={s.nav}>
-            <div className={s.item}>
-                <img src={icon} alt=""/>
-                <NavLink to="/profile">Profile</NavLink>
-            </div>
-            <div className={s.item}>
-                <img src={world} alt=""/>
-                <NavLink to="/my-travel">My travel</NavLink>
-            </div>
-            <div className={s.item}>
-                <img src={chat} alt=""/>
-                <NavLink to="/posts">Posts</NavLink>
-            </div>
-            <div className={s.item}>
-                <img src={settings} alt=""/>
-                <NavLink to="/settings">Settings</NavLink>
-            </div>
-            <div className={s.item}>
-                <img src={support} alt=""/>
-                <NavLink to="/help">Help</NavLink>
-            </div>
+        <>
+            <nav className={s.nav}>
+                <div className={s.item + " " + s.captionBlock}>
+                    <h1>Navigation panel</h1>
+                </div>
+                <div className={s.item}>
+                    <img src={icon} alt=""/>
+                    <NavLink to="/profile">Profile</NavLink>
+                </div>
+                <div className={s.item}>
+                    <img src={world} alt=""/>
+                    <NavLink to="/my-travel">My travel</NavLink>
+                </div>
+                <div className={s.item}>
+                    <img src={chat} alt=""/>
+                    <NavLink to="/posts">Posts</NavLink>
+                </div>
+                <div className={s.item}>
+                    <img src={settings} alt=""/>
+                    <NavLink to="/settings">Settings</NavLink>
+                </div>
+                <div className={s.item}>
+                    <img src={support} alt=""/>
+                    <NavLink to="/help">Help</NavLink>
+                </div>
 
 
-            {/*<div className={s.logo}>*/}
-            {/*    <img src="http://kartinki.vip/uploads/posts/2017-10/1506805657_570-malina.gif" alt=""/>*/}
-            {/*</div>*/}
+                {/*<div className={s.logo}>*/}
+                {/*    <img src="http://kartinki.vip/uploads/posts/2017-10/1506805657_570-malina.gif" alt=""/>*/}
+                {/*</div>*/}
 
-        </nav>
+            </nav>
+        </>
     );
 }
 

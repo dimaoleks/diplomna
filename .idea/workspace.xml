@@ -2,88 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e7e8bed-d41c-49a2-9155-71589f25d281" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/001-headset.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/002-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/003-like.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/004-assistance.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/005-megaphone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/006-smartphone-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/007-house.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/008-id-card.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/009-fax.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/010-contract.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/011-smartphone-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/012-24-hours.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/013-mail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/014-agenda-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/015-worldwide-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/016-smartphone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/017-mobile-phone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/018-map.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/019-message.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/020-telephone-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/021-email.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/022-agenda.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/023-worldwide.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/024-laptop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/025-arroba.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/026-chat-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/027-mouse.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/028-telephone-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/029-telephone-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/030-telephone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/031-link.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/032-placeholder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/033-chat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/034-printer.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/035-calendar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/036-customer-service.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/037-responsive.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/038-wall-clock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/039-info.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/040-sms.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/logout.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/iconPack/register.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/001-airplane.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/002-backpack.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/003-bed.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/004-briefcase.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/005-calendar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/006-camera.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/007-camping.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/008-personal card.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/009-compass.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/010-credit card.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/011-dish.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/012-flashlight.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/013-ticket.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/014-global.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/015-navigation.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/016-grill.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/017-woman.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/018-beach.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/019-shop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/020-lock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/021-luggage.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/022-mountain.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/023-mountain.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/024-passport.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/025-picture.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/026-sea.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/027-food service.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/028-ship.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/029-road sign.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/travelIconPack/030-navigation.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Main/MainPage/MainPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Main/MainPage/MainPage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/assets/images/mountain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Login/Login.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Register/Register.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Main/MainPage/ImageSlider/ImageSlider.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Main/MainPage/ImageSlider/ImageSlider.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Help/Help.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Help/Help.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/redux/mainpage-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/utils/object-helpers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Header/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Header/Register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Register/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Main/MainPage/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Main/MainPage/MainPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Main/MainPage/MainPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Main/MainPage/MainPage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravel.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravel.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravelContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravelContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravels.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravels.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/Travel/Travel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/Travel/Travel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/auth-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/PostReduxForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/PostReduxForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/Posts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/PostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/PostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/common/FormsControl/FormsControls.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/common/FormsControl/FormsControls.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/common/FormsControl/FormsControls.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/common/FormsControl/FormsControls.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/common/PostDiv/PostDiv.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/common/PostDiv/PostDiv.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/redux/posts-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/posts-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +73,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/diplomna/src/assets/iconPack" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/diplomna/src/assets/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -135,12 +87,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Lessons\diplomna\diplomna\src\assets\iconPack" />
       <recent name="D:\Lessons\diplomna\diplomna\src\assets\images" />
+      <recent name="D:\Lessons\diplomna\diplomna\src\assets\iconPack" />
       <recent name="D:\Lessons\diplomna\diplomna\src\components\common\AddButton" />
       <recent name="D:\Lessons\diplomna\diplomna\src\components\Navbar\Profile\MyTravel" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Lessons\diplomna\diplomna\src\components\Main\MainPage" />
       <recent name="D:\Lessons\diplomna\diplomna\src\assets\travelIconPack" />
       <recent name="D:\Lessons\diplomna\diplomna\src\assets\iconPack" />
       <recent name="D:\Lessons\diplomna\diplomna\src\assets\images" />
@@ -175,6 +128,10 @@
       <workItem from="1621609494315" duration="1730000" />
       <workItem from="1621676146298" duration="19776000" />
       <workItem from="1621759504663" duration="11901000" />
+      <workItem from="1621854144239" duration="736000" />
+      <workItem from="1621866228034" duration="18756000" />
+      <workItem from="1621919676613" duration="1351000" />
+      <workItem from="1621942115020" duration="2142000" />
     </task>
     <servers />
   </component>

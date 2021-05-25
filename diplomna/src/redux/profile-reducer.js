@@ -7,8 +7,8 @@ let initialState = {
         id: "99173b99-b164-4023-b947-2c80ee18bf98",
         firstName: "Dmytro",
         lastName: "Oleksandryuk",
-        email: "dima.oleksandryuk@gmail.com",
-        phoneNumber: "0669007804"
+        email: "dmytro.oleksandryuk@chnu.edu.ua",
+        phoneNumber: "1233216677"
     }
 }
 

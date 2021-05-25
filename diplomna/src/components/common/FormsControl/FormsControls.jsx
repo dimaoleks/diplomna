@@ -22,7 +22,7 @@ export const TextArea = (props) => {
 
 export const Input = (props) => {
     const {input, meta, child, ...restProps} = props;
-    return <FormControl {...props}><input {...input}{...restProps}/></FormControl>
+    return <FormControl {...props}><input className={s.inputStyle} {...input}{...restProps}/></FormControl>
 }
 
 export const createField = (placeholder, name, component, validators, type, props = {}, text = "") => {

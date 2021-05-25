@@ -3,61 +3,71 @@ import {Field, reduxForm} from "redux-form";
 import {register} from '../../../redux/auth-reducer';
 import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
+import s from './Register.module.css';
+import {Input} from "../../common/FormsControl/FormsControls";
+import AddButton from "../../common/AddButton/AddButton";
 
 const RegisterForm = (props) => {
     return (
-        <form onSubmit={props.handleSubmit}>
+        <form onSubmit={props.handleSubmit} className={s.registerBlock}>
+            <h3>Username</h3>
             <div>
                 <Field
-                    placeholder={"Username"}
+                    placeholder={"john1954"}
                     name={"username"}
-                    component={"input"}
+                    component={Input}
                     type={"text"}/>
             </div>
+            <h3>First name</h3>
             <div>
                 <Field
-                    placeholder={"First name"}
+                    placeholder={"John"}
                     name={"firstName"}
-                    component={"input"}
+                    component={Input}
                     type={"text"}/>
             </div>
+            <h3>Last name</h3>
             <div>
                 <Field
-                    placeholder={"Last name"}
+                    placeholder={"Travolta"}
                     name={"lastName"}
-                    component={"input"}
+                    component={Input}
                     type={"text"}/>
             </div>
+            <h3>Email</h3>
             <div>
                 <Field
-                    placeholder={"Email"}
+                    placeholder={"john.travoltaPr@gmail.com"}
                     name={"email"}
-                    component={"input"}
+                    component={Input}
                     type={"text"}/>
             </div>
+            <h3>Phone</h3>
             <div>
                 <Field
-                    placeholder={"Phone"}
+                    placeholder={"+1-541-754-3010"}
                     name={"phone"}
-                    component={"input"}
+                    component={Input}
                     type={"text"}/>
             </div>
+            <h3>Password</h3>
             <div>
                 <Field
-                    placeholder={"Password"}
+                    placeholder={""}
                     name={"password"}
-                    component={"input"}
+                    component={Input}
                     type={"password"}/>
             </div>
+            <h3>Confirm password</h3>
             <div>
                 <Field
-                    placeholder={"Confirm password"}
+                    placeholder={""}
                     name={"confirmPassword"}
-                    component={"input"}
+                    component={Input}
                     type={"password"}/>
             </div>
             <div>
-                <button>Register</button>
+               <AddButton name={"Register"}/>
             </div>
         </form>
     );

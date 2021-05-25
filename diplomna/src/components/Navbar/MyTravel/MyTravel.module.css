@@ -8,28 +8,38 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .travelItem {
-    background-color: #fcdec9;
-    max-width: 450px;
-    min-height: 150px;
+    background-color: #84bddd;
+    max-width: 350px;
+    min-height: 350px;
+    min-width: 350px;
     border-radius: 10px;
     height: 50px;
     align-items: center;
     margin-top: inherit;
+    float: left;
+    margin-right: 10px;
+    border: 2px solid #0d0c25;
 }
 
 .itemHeadText {
     text-align: center;
-    padding: 10px 45% 0 10px;
+    padding: 10px;
+    font-family: "Bookman Old Style";
+    max-height: 20%;
+    min-height: 20%;
 }
 
 .itemCountryText {
-    padding-left: 30%;
-    color: darkblue;
+    text-align: center;
+    color: #8615cd;
+    max-height: 10%;
+    min-height: 10%;
 }
 
 .itemDetailsText {
-    padding-left: 10%;
-    color: #881144;
+    padding: 0 10%;
+    color: #0d0c25;
+    font-size: 24px;
 }
 
 .itemDiv div {
@@ -45,4 +55,9 @@ textarea {
 
 .item {
     margin-top: 10px;
+}
+
+.addButtonCategory {
+    margin-top: 10px;
+    padding-left: 10%;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Posts from "./Posts";
 import {connect} from "react-redux";
-import {addPosts, sendPost} from "../../../redux/posts-reducer";
+import {addPosts, addLike, sendPost, removeLike} from "../../../redux/posts-reducer";
 
 
 const mapStateToProps = (state) => ({
@@ -11,5 +11,7 @@ const mapStateToProps = (state) => ({
 
 
 export default connect(mapStateToProps, {
-    sendPost
+    sendPost,
+    addLike,
+    removeLike
 })(Posts);

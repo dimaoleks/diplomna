@@ -3,22 +3,25 @@ import {Field, reduxForm} from "redux-form";
 import {login} from '../../../redux/auth-reducer';
 import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
+import s from './Login.module.css';
+import {Input} from "../../common/FormsControl/FormsControls";
+import AddButton from "../../common/AddButton/AddButton";
 
 const LoginForm = (props) => {
     return (
-        <form onSubmit={props.handleSubmit}>
+        <form onSubmit={props.handleSubmit} className={s.liginBlock}>
             <div>
                 <Field
                     placeholder={"Username"}
                     name={"username"}
-                    component={"input"}
+                    component={Input}
                     type={"text"}/>
             </div>
             <div>
                 <Field
                     placeholder={"Password"}
                     name={"password"}
-                    component={"input"}
+                    component={Input}
                     type={"password"}/>
             </div>
             <div>
@@ -29,7 +32,7 @@ const LoginForm = (props) => {
                     Remember me
             </div>
             <div>
-                <button>Login</button>
+                <AddButton name={"Login"}/>
             </div>
         </form>
     );
@@ -41,7 +44,6 @@ const LoginReduxForm = reduxForm({
 
 const Login = (props) => {
     const onSubmit = (formData) => {
-        debugger;
         props.login(formData.username, formData.password, formData.rememberMe);
     }
 
@@ -49,7 +51,6 @@ const Login = (props) => {
         return <Redirect to={"/profile"}/>
     }
 
-    debugger;
     return (
         <div>
             <h1>Login</h1>

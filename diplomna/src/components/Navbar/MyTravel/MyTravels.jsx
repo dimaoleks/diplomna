@@ -13,7 +13,7 @@ import DateFnsUtils from '@date-io/date-fns';
 
 const travelObj = {
     currency: null,
-    date: null,
+    date: new Date().toISOString().substring(0, 10),
     name: ""
 };
 
@@ -32,7 +32,7 @@ const MyTravels = (props) => {
 
     return (
         <div>
-            <h3>My travels</h3>
+            <h1>My travels</h1>
             <AddNewTravelForm onSubmit={onAddTravel} countries={countries}/>
             <hr/>
             <div className={s.travelsBlock}>
@@ -65,6 +65,7 @@ let AddNewTravelForm = (props) => {
 
     const handleDateChange = (date) => {
         setSelectedDate(date);
+        debugger;
         travelObj.date = date.toISOString().substring(0, 10);
     };
 

@@ -9,7 +9,7 @@ class Travel extends React.Component {
     }
 
     render() {
-
+    debugger;
         return (
             <div className={s.travelItem} onDoubleClick={this.onItemClick}>
                 <div className={s.itemHeadText}>
@@ -19,11 +19,13 @@ class Travel extends React.Component {
                     <h3>{this.props.country}</h3>
                 </div>
                 <div className={s.itemDetailsText}>
-                    Budget: {this.props.money} {this.props.currency}
+                    Budget: {this.props.money} ({this.props.currency})
                 </div>
                 <div className={s.itemDetailsText}>
-                    Date
-                    "{this.props.date}"
+                    <h4>Date</h4> <div>{this.props.date}</div>
+                </div>
+                <div className={s.addButtonCategory}>
+                    <button>Add Category</button>
                 </div>
             </div>
         );

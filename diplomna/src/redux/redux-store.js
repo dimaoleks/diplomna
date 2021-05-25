@@ -6,6 +6,7 @@ import travelReducer from "./travel-reducer";
 import authReducer from "./auth-reducer";
 import appReducer from "./app-reducer";
 import postsReducer from "./posts-reducer";
+import mainpageReducer from "./mainpage-reducer";
 
 let reducers = combineReducers({
     profilePage: profileReducer,
@@ -13,7 +14,8 @@ let reducers = combineReducers({
     form: formReducer,
     travelPage: travelReducer,
     app: appReducer,
-    postPage: postsReducer
+    postPage: postsReducer,
+    mainPage: mainpageReducer
 });
 
 let store = createStore(reducers, applyMiddleware(thunkMiddleware));

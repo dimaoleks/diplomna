@@ -6,7 +6,6 @@ import {addNewTravel} from "../../../redux/travel-reducer";
 class MyTravelContainer extends React.Component {
 
     render() {
-        debugger;
         return (
             <div>
                 <MyTravel addNewTravel={addNewTravel}/>

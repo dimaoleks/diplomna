@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {TextField} from "@material-ui/core";
+import {FormControl, Grid, TextField} from "@material-ui/core";
 import s from './Posts.module.css';
 import AddButton from "../../common/AddButton/AddButton";
 import {reduxForm} from "redux-form";
@@ -8,7 +8,6 @@ import {addPosts} from "../../../redux/posts-reducer";
 import {createField, createPhotoField, Input, TextArea} from "../../common/FormsControl/FormsControls";
 import {FileInput} from "../../common/FileInput/FileInput";
 import defaultImageSrc from "../../../assets/images/user-logo.png";
-
 
 const PostReduxForm = (props) => {
 
@@ -22,30 +21,38 @@ const PostReduxForm = (props) => {
                 </div>
 
                 <div className={s.postCreatorBlock}>
-
                     <div>
                         <input type="file" accept="image/*" onChange={props.showPreview}/>
                     </div>
 
                     <div>
-                        <input type="text" name="caption" placeholder="Caption" value={values.caption}
-                               onChange={props.handleInputChange}/>
+                        <TextField onChange={props.handleInputChange} name={"caption"} required
+                                   id="standard-required" label="Caption" value={values.caption}/>
+                        {/*<input type="text" name="caption" placeholder="Caption" value={values.caption}*/}
+                        {/*       onChange={props.handleInputChange}/>*/}
                     </div>
 
                     <div>
-                        <input type="text" name="author" placeholder="Author" value={values.author}
-                               onChange={props.handleInputChange}/>
+                        <TextField onChange={props.handleInputChange} name={"author"} required
+                                   id="standard-required" label="Author" value={values.author}/>
+
+                        {/*<input type="text" name="author" placeholder="Author" value={values.author}*/}
+                        {/*       onChange={props.handleInputChange}/>*/}
                     </div>
 
                     <div>
-                        <textarea rows={8} name="description" placeholder="Description" value={values.description}
-                                  onChange={props.handleInputChange}/>
+                        <TextField rows={5} multiline onChange={props.handleInputChange} name={"description"}
+                                   required id="standard-required" label="Description" value={values.description}/>
+
+                        {/*<textarea rows={8} name="description" placeholder="Description" value={values.description}*/}
+                        {/*          onChange={props.handleInputChange}/>*/}
+                    </div>
+
+                    <div className={s.postAddButton}>
+                        <AddButton name={"Create post"}/>
                     </div>
                 </div>
 
-                <div className={s.postAddButton}>
-                    <AddButton name={"Create post"}/>
-                </div>
 
             </form>
 
