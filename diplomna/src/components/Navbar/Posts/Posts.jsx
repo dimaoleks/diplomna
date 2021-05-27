@@ -17,7 +17,7 @@ const initialFieldValues = {
 }
 const Posts = (props) => {
 
-    let postsElements = [...props.posts].reverse().map(p => <PostDiv id={p.id} image={p.image} caption={p.caption}
+    let postsElements = [...props.posts].reverse().map(p => <PostDiv id={p.id} image={p.image64} caption={p.caption}
                                                                      author={"- \"" + p.author + "\""}
                                                                      description={p.description}
                                                                      likesCount={p.likesCount} key={p.id}
@@ -61,9 +61,9 @@ const Posts = (props) => {
         formData.append("author", values.authorName);
         formData.append("caption", values.caption);
         formData.append("description", values.description);
-        formData.append("imageFile", values.imageFile);
+        formData.append("image", values.imageFile);
 
-        props.sendPost(values);
+        props.sendPost(formData);
     }
 
     return (

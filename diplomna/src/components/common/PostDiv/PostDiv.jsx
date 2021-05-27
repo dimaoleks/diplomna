@@ -3,7 +3,6 @@ import React from "react";
 
 
 const PostDiv = (props) => {
-    debugger;
     return (
         <div className={s.container}>
             <div className={s.postBlock}>

@@ -48,12 +48,16 @@ export const authAPI = {
 export const postApi = {
 
     sendPost: (formData) => {
-        debugger;
         return instance.post('post/createpost', formData, {
             headers: {
                 'Content-type': 'multipart/form-data'
             }
         })
+    },
+
+    getPosts: (postsCount) => {
+        debugger;
+        return instance.get(`post/getposts/${postsCount}`);
     }
 
 }

@@ -9,7 +9,6 @@ class Travel extends React.Component {
     }
 
     render() {
-    debugger;
         return (
             <div className={s.travelItem} onDoubleClick={this.onItemClick}>
                 <div className={s.itemHeadText}>

@@ -78,9 +78,9 @@ export const login = (username, password, rememberMe) => async (dispatch) => {
     }
 }
 
-// export const getIsAuthorized = (token) => async (dispatch) => {
-//
-// }
+export const getIsAuthorized = (token) => async (dispatch) => {
+
+}
 
 export const logout = () => async (dispatch) => {
     debugger;
