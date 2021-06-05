@@ -2,16 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e7e8bed-d41c-49a2-9155-71589f25d281" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/CityPage/CityPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/CityPage/CityPage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/CityPage/CityPageContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/components/common/ItemSelector/ItemSelector.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/components/common/ItemSelector/ItemSelector.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/components/common/SearchInput/SearchInput.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/diplomna/src/hoc/withAuthRedirect.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/Travel/Travel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/Travel/Travel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/PostReduxForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/PostReduxForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Header/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Header/Register/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Header/Register/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravel.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravel.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravelContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravelContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravels.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/MyTravel/MyTravels.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/Posts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/Posts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/Posts.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/PostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Posts/PostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/Navbar/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/components/common/FormsControl/FormsControls.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/common/FormsControl/FormsControls.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/components/common/PostDiv/PostDiv.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/components/common/PostDiv/PostDiv.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/redux/app-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/app-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/auth-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diplomna/src/redux/posts-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/posts-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/redux/travel-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/redux/travel-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplomna/src/utils/object-helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/diplomna/src/utils/object-helpers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +56,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1rOeLQdFFIVmS3uHwUxkQV6jsf8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -69,11 +92,11 @@
       <recent name="D:\Lessons\diplomna\diplomna\src\components\Navbar\Profile\MyTravel" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Lessons\diplomna\diplomna\src\components\Navbar\MyTravel" />
+      <recent name="D:\Lessons\diplomna\diplomna\src\components\common\ItemSelector" />
       <recent name="D:\Lessons\diplomna\diplomna\src\components\Main\MainPage" />
       <recent name="D:\Lessons\diplomna\diplomna\src\assets\travelIconPack" />
       <recent name="D:\Lessons\diplomna\diplomna\src\assets\iconPack" />
-      <recent name="D:\Lessons\diplomna\diplomna\src\assets\images" />
-      <recent name="D:\Lessons\diplomna\diplomna\src\components\Navbar" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -108,7 +131,15 @@
       <workItem from="1621866228034" duration="18756000" />
       <workItem from="1621919676613" duration="1351000" />
       <workItem from="1621942115020" duration="3119000" />
-      <workItem from="1622129717390" duration="8408000" />
+      <workItem from="1622129717390" duration="8437000" />
+      <workItem from="1622215456913" duration="1918000" />
+      <workItem from="1622368653863" duration="4270000" />
+      <workItem from="1622475048605" duration="13923000" />
+      <workItem from="1622558545906" duration="6291000" />
+      <workItem from="1622648179344" duration="11103000" />
+      <workItem from="1622702630718" duration="2021000" />
+      <workItem from="1622725023359" duration="622000" />
+      <workItem from="1622880423472" duration="25399000" />
     </task>
     <servers />
   </component>

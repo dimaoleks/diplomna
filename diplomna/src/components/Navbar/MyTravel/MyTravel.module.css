@@ -4,7 +4,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .travelsBlock {
-    margin: 15px 0 0 15px;
+    padding: 50px 70px 0 70px;
+}
+.travelsBlock > div {
+    padding-bottom: 25px;
 }
 
 .travelItem {
@@ -60,4 +63,30 @@ textarea {
 .addButtonCategory {
     margin-top: 10px;
     padding-left: 10%;
+}
+
+.searchBlock {
+    /*margin: 3% 0 0 4%*/
+}
+
+.searchBlock > div {
+    min-width: 350px;
+}
+
+.layout {
+    box-sizing: border-box;
+    display: flex;
+    vertical-align: middle;
+}
+
+.countryBlock {
+    vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*justify-content: space-evenly;*/
+    margin: 30px 0;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: center;
 }

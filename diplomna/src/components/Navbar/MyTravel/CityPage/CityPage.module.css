@@ -1,0 +1,28 @@
+.searchBlock > div {
+    min-width: 350px;
+}
+
+.travelsBlock {
+    padding: 50px 70px 0 70px;
+}
+.travelsBlock > div {
+    padding-bottom: 25px;
+}
+
+.layout {
+    box-sizing: border-box;
+    display: flex;
+    vertical-align: middle;
+}
+
+.cityBlock {
+    vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*justify-content: space-evenly;*/
+    margin: 30px 0;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: center;
+}

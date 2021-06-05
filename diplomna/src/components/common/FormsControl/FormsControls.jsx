@@ -25,6 +25,11 @@ export const Input = (props) => {
     return <FormControl {...props}><input className={s.inputStyle} {...input}{...restProps}/></FormControl>
 }
 
+export const InputPhone = (props) => {
+    const {input, meta, child, ...restProps} = props;
+    return <FormControl {...props}><input className={s.inputStyle} {...input}{...restProps}/></FormControl>
+}
+
 export const createField = (placeholder, name, component, validators, type, props = {}, text = "") => {
     return (
         <div>

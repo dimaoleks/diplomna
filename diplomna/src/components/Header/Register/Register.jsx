@@ -4,7 +4,7 @@ import {register} from '../../../redux/auth-reducer';
 import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
 import s from './Register.module.css';
-import {Input} from "../../common/FormsControl/FormsControls";
+import {Input, InputPhone} from "../../common/FormsControl/FormsControls";
 import AddButton from "../../common/AddButton/AddButton";
 
 const RegisterForm = (props) => {
@@ -45,10 +45,12 @@ const RegisterForm = (props) => {
             <h3>Phone</h3>
             <div>
                 <Field
-                    placeholder={"+1-541-754-3010"}
+                    placeholder={"+541-754-3010"}
                     name={"phone"}
-                    component={Input}
-                    type={"text"}/>
+                    component={InputPhone}
+                    type="number"
+                    maxLength={10}
+                />
             </div>
             <h3>Password</h3>
             <div>

@@ -10,37 +10,96 @@ import {
     KeyboardDatePicker,
 } from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
+import SearchInput from "../../common/SearchInput/SearchInput";
+import ItemSelector from "../../common/ItemSelector/ItemSelector";
+import {useHistory} from 'react-router-dom';
 
 const travelObj = {
-    currency: null,
-    date: new Date().toISOString().substring(0, 10),
-    name: ""
+    currencyId: null,
+    date: null || new Date(),
+    name: "",
+    countryId: null,
+    money: 0
 };
 
 const MyTravels = (props) => {
+    const history = useHistory();
 
-    let travels = [...props.travels].map(t => <Travel name={t.name} country={t.country} currency={t.currency}
-                                                      money={t.money} date={t.date}
-                                                      key={t.id}/>);
-
-    let countries = [...props.countries].map(c => <option value={c.value} key={c.value}>{c.name}</option>);
-
-    let onAddTravel = (value) => {
-        value = travelObj;
-        props.addNewTravel(value);
+    let onCountryClick = ({id}) => {
+        props.setCountry(id);
+        history.push("/citypage");
     }
 
+    let countries = [...props.countries]?.sort((a, b) => a.name.localeCompare(b.name))?.map(c => <ItemSelector
+        value={c.id}
+        key={c.id}
+        name={c.name}
+        onClickHandler={e => onCountryClick(c)}
+    />);
+
+    let currencies = [...props.currencies].map(c => <MenuItem
+        value={c.id}>{c.name + " " + c.currencyChar}</MenuItem>);
+
+
+    // let travels = [...props.travels].sort((a, b) => b.likes - a.likes).map(t => <Travel name={t.name}
+    //                                                                                     country={[...props.countries].length > 0 ? [...props.countries].filter(c => c.id === t.countryId)[0]?.name : ""}
+    //                                                                                     currency={[...props.currencies].length > 0 ? [...props.currencies].filter(c => c.id === t.currencyId)[0]?.name : ""}
+    //                                                                                     money={t.money} date={t.date}
+    //                                                                                     key={t.id}/>);
+
+    // let onAddTravel = (value) => {
+    //     value = travelObj;
+    //
+    //     debugger;
+    //     const formData = new FormData();
+    //     formData.append("name", value.name);
+    //     formData.append("countryId", value.countryId);
+    //     formData.append("date", value.date.toISOString());
+    //     formData.append("currencyId", value.currencyId);
+    //     formData.append("money", value.money);
+    //
+    //     props.addNewTravel(formData);
+    // }
+
+    let searchCountry = (e) => {
+        if (e === null || e === undefined) {
+            return;
+        }
+        let searchValue = e?.currentTarget?.value;
+        props.searchCountry(searchValue);
+    }
+
+    // return (
+    //     <div>
+    //         <h1>My travels</h1>
+    //         <AddNewTravelForm onSubmit={onAddTravel} countries={countries} currencies={currencies}/>
+    //         <hr/>
+    //         <div className={s.travelsBlock}>
+    //             {travels}
+    //         </div>
+    //     </div>
+    // );
+
+
     return (
-        <div>
-            <h1>My travels</h1>
-            <AddNewTravelForm onSubmit={onAddTravel} countries={countries}/>
-            <hr/>
+        <>
             <div className={s.travelsBlock}>
-                {travels}
+                <div>
+                    <h4>Please, select or find country</h4>
+                </div>
+                <div className={s.searchBlock}>
+                    <SearchInput onChangeHandler={searchCountry}/>
+                </div>
+                <div className={s.layout}>
+                    <div className={s.countryBlock}>
+                        {countries}
+                    </div>
+                </div>
             </div>
-        </div>
+        </>
     );
 }
+
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -57,16 +116,16 @@ let AddNewTravelForm = (props) => {
     const [currency, setCurrency] = React.useState('');
 
     const handleChange = (event) => {
+        debugger;
         setCurrency(event.target.value);
-        travelObj.currency = event.target.value;
+        travelObj.currencyId = event.target.value;
     };
 
     const [selectedDate, setSelectedDate] = React.useState(new Date());
 
     const handleDateChange = (date) => {
         setSelectedDate(date);
-        debugger;
-        travelObj.date = date.toISOString().substring(0, 10);
+        travelObj.date = date;
     };
 
     const onSetName = (name) => {
@@ -76,13 +135,15 @@ let AddNewTravelForm = (props) => {
     const [selectCountry, setSelectedCountry] = React.useState();
 
     const onCountryChange = (country) => {
+        debugger;
         setSelectedCountry(country.target.value);
-        travelObj.country = country.target.value;
+        travelObj.countryId = country.target.value;
     }
 
     const [budget, setBudget] = React.useState(0);
 
     const onSetBudget = (budget) => {
+        debugger;
         setBudget(budget.target.value);
         travelObj.money = budget.target.value;
     }
@@ -92,7 +153,8 @@ let AddNewTravelForm = (props) => {
             <Grid container spacing={1}>
                 <Grid item xs={12} sm={6} md={3} lg={4} className={s.item}>
                     <div>
-                        <TextField onChange={onSetName}  required id="standard-required" label="Name" placeholder="Name"/>
+                        <TextField onChange={onSetName} required id="standard-required" label="Name"
+                                   placeholder="Name"/>
                         <FormControl className={classes.formControl}>
                             <InputLabel id="demo-simple-select-label">Currency</InputLabel>
                             <Select
@@ -104,9 +166,7 @@ let AddNewTravelForm = (props) => {
                                 <MenuItem defaultValue="">
                                     <em>None</em>
                                 </MenuItem>
-                                <MenuItem value='USD'>USD</MenuItem>
-                                <MenuItem value='UAH'>UAH</MenuItem>
-                                <MenuItem value='EURO'>EURO</MenuItem>
+                                {props.currencies}
                             </Select>
                         </FormControl>
                     </div>
@@ -145,7 +205,8 @@ let AddNewTravelForm = (props) => {
                                 {props.countries}
                             </NativeSelect>
                         </FormControl>
-                        <TextField onChange={onSetBudget} defaultValue={budget} id="standard-required" label="Budget" placeholder="Budget"/>
+                        <TextField onChange={onSetBudget} defaultValue={budget} id="standard-required" label="Budget"
+                                   placeholder="Budget"/>
                     </div>
                 </Grid>
                 <Grid item xs={12} sm={6}>

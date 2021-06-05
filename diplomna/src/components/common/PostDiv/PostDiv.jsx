@@ -8,7 +8,7 @@ const PostDiv = (props) => {
             <div className={s.postBlock}>
 
                 <div className={s.postIcon}>
-                    <img src={props.image}
+                    <img src={`data:image/png;base64,${props.image}`}
                          alt=""/>
                 </div>
 
@@ -17,14 +17,11 @@ const PostDiv = (props) => {
                 </div>
 
                 <div className={s.likeBlock}>
-                    <button className={s.likeButton} onClick={e => {
-                        debugger;
-                        props.isLiked ? props.addLike(props.id) : props.removeLike(props.id)
-                    }}>
+                    <button className={s.likeButton} onClick={e => props.pressLike(props.id)}>
                         👍🏻
                     </button>
                     <span className={s.likeCount}>
-                        {props.likesCount}
+                        {props.likes}
                     </span>
                 </div>
 

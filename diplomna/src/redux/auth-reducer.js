@@ -1,4 +1,5 @@
 import {authAPI} from "../api/api";
+import {act} from "@testing-library/react";
 
 const SET_USER_DATA = "auth/SET-USER-DATA";
 const SET_TOKEN = "auth/SET-TOKEN";
@@ -18,7 +19,10 @@ const authReducer = (state = initialState, action) => {
         case SET_USER_DATA: {
             return {
                 ...state,
-                ...action.payload
+                userId: action.profile.userId,
+                email: action.profile.email,
+                login: action.profile.login,
+                isAuth: action.profile.isAuth
             };
         }
         case SET_TOKEN: {
@@ -40,7 +44,7 @@ const authReducer = (state = initialState, action) => {
 
 export const setAuthUserData = (userId, email, login, isAuth) => ({
     type: SET_USER_DATA,
-    payload: {userId, email, login, isAuth}
+    profile: {userId, email, login, isAuth}
 });
 
 export const setAuthToken = (token) => ({
@@ -56,8 +60,9 @@ export const setRegistered = () => ({
 export const getAuthUserData = (token) => async (dispatch) => {
     let response = await authAPI.me(token);
     if (response.data.succeeded === true) {
-        let {id, email, login} = response.data.user;
-        dispatch(setAuthUserData(id, email, login, true));
+        let {id, email, login,} = response.data.user;
+        let isAuth = response.data.isAuthenticated;
+        dispatch(setAuthUserData(id, email, login, isAuth));
     }
 }
 
@@ -69,7 +74,6 @@ export const register = (registerModel) => async (dispatch) => {
 }
 
 export const login = (username, password, rememberMe) => async (dispatch) => {
-    debugger;
     let response = await authAPI.login(username, password, rememberMe);
     if (response.data.result.succeeded === true) {
         let token = response.data.token;

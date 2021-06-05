@@ -2,14 +2,17 @@ import React from 'react';
 import Profile from './Profile';
 import {getUserProfile} from "../../../redux/profile-reducer";
 import {connect} from "react-redux";
+import {Redirect} from "react-router-dom";
 
 class ProfileContainer extends React.Component {
 
     refreshProfile() {
+        debugger;
         let userId = this.props.profile?.id;
         userId = !userId ? this.props.authorizedUserId : userId;
         if (!userId) {
-            this.props.history.push("/login");
+            return <Redirect to={"/login"}/>
+            //this.props.history.push("/login");
         }
         this.props.getUserProfile(userId);
     }
@@ -18,13 +21,14 @@ class ProfileContainer extends React.Component {
         this.refreshProfile();
     }
 
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        if (this.props) {
-            this.refreshProfile();
-        }
-    }
+    // componentDidUpdate(prevProps, prevState, snapshot) {
+    //     if (this.props) {
+    //         this.refreshProfile();
+    //     }
+    // }
 
     render() {
+        debugger;
         return (
             <Profile {...this.props}
                      profile={this.props.profile}/>

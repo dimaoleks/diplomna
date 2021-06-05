@@ -8,7 +8,7 @@ import {debounce} from "@material-ui/core";
 
 const initialFieldValues = {
     authorId: null,
-    authorName: "",
+    author: "",
     caption: "",
     description: "",
     imageName: "",
@@ -17,12 +17,19 @@ const initialFieldValues = {
 }
 const Posts = (props) => {
 
+
+    const pressLike = (postId) => {
+        debugger;
+        let userId = props.authorizedUserId;
+        props.pressLike({postId, userId});
+    }
+
+    debugger;
     let postsElements = [...props.posts].reverse().map(p => <PostDiv id={p.id} image={p.image64} caption={p.caption}
                                                                      author={"- \"" + p.author + "\""}
                                                                      description={p.description}
-                                                                     likesCount={p.likesCount} key={p.id}
-                                                                     addLike={props.addLike}
-                                                                     removeLike={props.removeLike}
+                                                                     likes={p.likes} key={p.id}
+                                                                     pressLike={pressLike}
                                                                      isLiked={p.isLiked}
     />);
     const [values, setValues] = useState(initialFieldValues);
@@ -58,13 +65,22 @@ const Posts = (props) => {
 
     const handleFormSubmit = (e) => {
         const formData = new FormData();
-        formData.append("author", values.authorName);
+        formData.append("author", values.author);
         formData.append("caption", values.caption);
         formData.append("description", values.description);
         formData.append("image", values.imageFile);
 
+        setValues({
+            ...values,
+            author: "",
+            caption: "",
+            description: "",
+            imageSrc: null
+        });
+
         props.sendPost(formData);
     }
+
 
     return (
         <>

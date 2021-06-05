@@ -1,0 +1,21 @@
+.countryItem {
+    margin: 10px;
+    min-width: 150px;
+    min-height: 50px;
+    max-width: 150px;
+    max-height: 150px;
+    text-align: center;
+    background-color: #03a492;
+    white-space: pre-wrap;
+    -webkit-box-shadow: 0 2px 5px 7px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0 2px 5px 7px rgba(34, 60, 80, 0.6);
+    box-shadow: 0 2px 5px 7px rgba(34, 60, 80, 0.6);
+}
+
+.countryItem > p {
+    text-align: center;
+}
+
+.countryItem:hover {
+    cursor: pointer;
+}

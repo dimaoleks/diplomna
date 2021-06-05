@@ -8,22 +8,23 @@ import AddButton from "../../../common/AddButton/AddButton";
 import defaultImageSrc from "../../../../assets/images/user-logo.png";
 
 const ProfileInfoForm = (props) => {
+    debugger;
     return (
         <form className={s.infoContainer} onSubmit={props.handleSubmit}>
             <div>
-                <TextField defaultValue={props.profile.firstName} id="standard-required" label="First name"
+                <TextField defaultValue={props.profile.firstName} value={props.profile.firstName} id="standard-required" label="First name"
                            placeholder={"First name"} type={"text"} name={"firstName"}/>
             </div>
             <div>
-                <TextField defaultValue={props.profile.lastName} id="standard-required" label="Last name"
+                <TextField defaultValue={props.profile.lastName} value={props.profile.lastName} id="standard-required" label="Last name"
                            placeholder={"Last name"} type={"text"} name={"lastName"}/>
             </div>
             <div>
-                <TextField defaultValue={props.profile.email} id="standard-required" label="Email"
+                <TextField defaultValue={props.profile.email} value={props.profile.email} id="standard-required" label="Email"
                            placeholder={"Email"} type={"text"} name={"email"}/>
             </div>
             <div>
-                <TextField defaultValue={props.profile.phoneNumber} id="standard-required" label="Phone"
+                <TextField defaultValue={props.profile.phone} value={props.profile.phone} id="standard-required" label="Phone"
                            placeholder={"Phone"} type={"text"} name={"phoneNumber"}/>
             </div>
             <div>

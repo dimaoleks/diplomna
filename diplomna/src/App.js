@@ -14,6 +14,7 @@ import Register from "./components/Header/Register/Register";
 import PostsContainer from "./components/Navbar/Posts/PostsContainer";
 import MainPage from "./components/Main/MainPage/MainPage";
 import Help from "./components/Navbar/Help/Help";
+import CityPageContainer from "./components/Navbar/MyTravel/CityPage/CityPageContainer";
 
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
                         <Route path='/login' render={() => <Login/>}/>
                         <Route path='/register' render={() => <Register/>}/>
                         <Route path='/mainpage' render={() => <MainPage/>}/>
+                        <Route path='/citypage' render={() => <CityPageContainer/>}/>
                     </div>
                 </div>
             </>
