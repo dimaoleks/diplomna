@@ -5,11 +5,12 @@
     max-width: 150px;
     max-height: 150px;
     text-align: center;
-    background-color: #03a492;
+    background-color: #ffa637;
     white-space: pre-wrap;
-    -webkit-box-shadow: 0 2px 5px 7px rgba(34, 60, 80, 0.6);
-    -moz-box-shadow: 0 2px 5px 7px rgba(34, 60, 80, 0.6);
-    box-shadow: 0 2px 5px 7px rgba(34, 60, 80, 0.6);
+    border: 1px solid #08160b;
+    /*-webkit-box-shadow: 0 2px 5px 7px rgba(34, 60, 80, 0.6);*/
+    /*-moz-box-shadow: 0 2px 5px 7px rgba(34, 60, 80, 0.6);*/
+    /*box-shadow: 0 2px 5px 7px rgba(34, 60, 80, 0.6);*/
 }
 
 .countryItem > p {

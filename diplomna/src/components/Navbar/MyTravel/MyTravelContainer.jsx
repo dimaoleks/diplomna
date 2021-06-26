@@ -27,11 +27,8 @@ class MyTravelContainer extends React.Component {
     render() {
         return (
             <div>
-                <MyTravel addNewTravel={this.props.addNewTravel}
-                          searchCountry={this.props.searchCountry}
-                          travels={this.props.travels}
+                <MyTravel searchCountry={this.props.searchCountry}
                           countries={this.props.countries}
-                          currencies={this.props.currencies}
                           setCountry={this.props.setCountry}
 
                 />
@@ -42,9 +39,7 @@ class MyTravelContainer extends React.Component {
 }
 
 let mapStateToProps = (state) => ({
-    travels: state.travelPage.travels,
-    countries: state.travelPage.countries,
-    currencies: state.travelPage.currencies
+    countries: state.travelPage.countries
 });
 
 export default compose(connect(

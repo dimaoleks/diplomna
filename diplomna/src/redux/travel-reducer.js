@@ -6,35 +6,15 @@ const ADD_COUNTRIES = 'travel/ADD-COUNTRIES';
 const ADD_TRAVELS = 'travel/ADD-TRAVELS';
 const SET_COUNTRY = 'travel/SET-COUNTRY';
 const ADD_CITIES = 'travel/ADD-CITIES';
+const SET_CITY = 'travel/SET-CITY';
 
 let initialState = {
-    travels: [
-        {id: "", name: "", money: 0, currency: "", date: "", country: ""}
-        // {id: 2, name: 'alpen', money: 3500, currency: 'USD', date: '2021-01-01', country: 'Austria'},
-        // {id: 3, name: 'Paris', money: 890, currency: 'EURO', date: '2021-01-01', country: 'France'},
-        // {id: 4, name: 'Moscow and St petersburg', money: 47500, currency: 'RUB', date: '2021-01-01', country: 'Russia'},
-        // {id: 5, name: 'Carpatian Mountains', money: 25000, currency: 'UAH', date: '2021-01-01', country: 'Ukraine'}
-    ],
-    countries: [
-        {value: '', name: 'None'},
-        {value: '', name: '123'},
-        {value: '', name: 'asdasd'}
-        // {value: 'Ukraine', name: 'Ukraine'},
-        // {value: 'Spain', name: 'Spain'},
-        // {value: 'Moldova', name: 'Moldova'},
-        // {value: 'Turkey', name: 'Turkey'},
-        // {value: 'Monaco', name: 'Monaco'},
-        // {value: 'Finland', name: 'Finland'}
-    ],
-    cities: [
-        {value: "", name: "None"},
-        {value: "", name: "None"},
-        {value: "", name: "None"}
-    ],
-    currencies: [
-        {id: "", currencyChar: "", name: ""}
-    ],
-    selectedCountryId: ""
+    travels: [{id: "", name: "", money: 0, currency: "", date: "", country: ""}],
+    countries: [{value: '', name: 'None'}],
+    cities: [{value: "", name: "None"}],
+    currencies: [{id: "", currencyChar: "", name: "None"}],
+    selectedCountry: "",
+    selectedCity: ""
 }
 
 const travelReducer = (state = initialState, action) => {
@@ -57,17 +37,23 @@ const travelReducer = (state = initialState, action) => {
                 travels: action.travels
             };
         }
-        case SET_COUNTRY: {
-            return {
-                ...state,
-                selectedCountryId: action.countryId
-            };
-        }
         case ADD_CITIES: {
             return {
                 ...state,
                 cities: action.cities
             };
+        }
+        case SET_COUNTRY: {
+            return {
+                ...state,
+                selectedCountry: action.country
+            };
+        }
+        case SET_CITY: {
+            return {
+                ...state,
+                selectedCity: action.city
+            }
         }
         default:
             return state;
@@ -102,10 +88,15 @@ export const addTravels = (travels) => ({
     travels
 });
 
-export const setCountry = (countryId) => ({
+export const setCountry = (country) => ({
     type: SET_COUNTRY,
-    countryId
+    country
 });
+
+export const setCity = (city) => ({
+    type: SET_CITY,
+    city
+})
 
 export const searchCountry = (countryName) => async (dispatch) => {
     if (countryName?.length > 0) {

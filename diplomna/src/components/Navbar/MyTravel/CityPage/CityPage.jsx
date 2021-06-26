@@ -8,11 +8,10 @@ const CityPage = (props) => {
 
     const history = useHistory();
 
-    let onCityClick = (countryId) => {
+    let onCityClick = (city) => {
         debugger;
-        console.log("gg");
-        //return <NavLink to={"/countrypage"}/>
-        history.push("/citypage");
+        props.setCity(city);
+        history.push("/create-travel");
     }
 
 
@@ -30,7 +29,7 @@ const CityPage = (props) => {
             return;
         }
         let searchValue = e?.currentTarget?.value;
-        props.searchCity(props.selectedCountryId, searchValue);
+        props.searchCity(props.selectedCountry?.id, searchValue);
     }
 
     return (
@@ -40,7 +39,7 @@ const CityPage = (props) => {
                     <h4>Please, select or find city</h4>
                 </div>
                 <div className={s.searchBlock}>
-                    <SearchInput onChangeHandler={searchCity}/>
+                    <SearchInput onChangeHandler={searchCity} label={"City"} placeholder={"Search city"}/>
                 </div>
                 <div className={s.layout}>
                     <div className={s.cityBlock}>

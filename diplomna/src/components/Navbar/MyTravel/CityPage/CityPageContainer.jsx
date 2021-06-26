@@ -1,12 +1,12 @@
 import React from "react";
 import {connect} from "react-redux";
 import CityPage from "./CityPage";
-import {getCitiesByCountry, searchCity} from "../../../../redux/travel-reducer";
+import {getCitiesByCountry, searchCity, setCity} from "../../../../redux/travel-reducer";
 
 class CityPageContainer extends React.Component {
 
     componentDidMount() {
-        this.props.getCitiesByCountry(this.props.selectedCountryId);
+        this.props.getCitiesByCountry(this.props.selectedCountry?.id);
     }
 
     render() {
@@ -14,7 +14,8 @@ class CityPageContainer extends React.Component {
             <div>
                 <CityPage cities={this.props.cities}
                           searchCity={this.props.searchCity}
-                          selectedCountryId={this.props.selectedCountryId}
+                          selectedCountry={this.props.selectedCountry}
+                          setCity={this.props.setCity}
                 />
             </div>
         );
@@ -24,10 +25,11 @@ class CityPageContainer extends React.Component {
 
 let mapStateToProps = (state) => ({
     cities: state.travelPage.cities,
-    selectedCountryId: state.travelPage.selectedCountryId
+    selectedCountry: state.travelPage.selectedCountry
 });
 
 export default connect(mapStateToProps, {
     getCitiesByCountry,
-    searchCity
+    searchCity,
+    setCity
 })(CityPageContainer);

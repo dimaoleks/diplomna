@@ -6,7 +6,7 @@ const SearchInput = (props) => {
 
     return (
         <>
-            <TextField id="outlined-basic" label="Search country" variant="outlined" placeholder="Country" autoComplete="" onChange={props.onChangeHandler}/>
+            <TextField id="outlined-basic" label={props.label} variant="outlined" placeholder={props.placeholder} autoComplete="" onChange={props.onChangeHandler} defaultValue={""}/>
         </>
     );
 }
